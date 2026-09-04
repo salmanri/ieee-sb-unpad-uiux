@@ -1,0 +1,146 @@
+/* ===================================
+   About Page
+   =================================== */
+
+.about-page {
+  padding-top: var(--navbar-height);
+}
+
+.about-page__header {
+  padding: var(--space-6xl) 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--ieee-blue-deeper) 0%, var(--ieee-blue) 60%, var(--ieee-blue-light) 100%);
+}
+
+.about-page__header-subtitle {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: var(--space-md) auto 0;
+}
+
+/* Intro Section */
+.about-page__intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-5xl);
+  align-items: center;
+}
+
+.about-page__logos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-3xl);
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-100);
+}
+
+.about-page__logo {
+  max-width: 220px;
+  height: auto;
+}
+
+.about-page__intro-text h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.about-page__intro-text p {
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+/* Cabinet Vector */
+.about-page__cabinet {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-5xl);
+  align-items: center;
+}
+
+.about-page__cabinet-text h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.about-page__cabinet-text p {
+  color: var(--gray-600);
+  line-height: 1.8;
+}
+
+.about-page__cabinet-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-page__cabinet-logo img {
+  max-width: 240px;
+  height: auto;
+  border-radius: var(--radius-xl);
+}
+
+/* Departments */
+.about-page__departments {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.about-page__dept-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl) var(--space-xl);
+  text-align: center;
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.about-page__dept-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-xl);
+}
+
+.about-page__dept-card h3 {
+  margin-bottom: var(--space-md);
+  color: var(--ieee-blue-deeper);
+}
+
+.about-page__dept-desc {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  line-height: 1.7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-page__intro,
+  .about-page__cabinet {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+    text-align: center;
+  }
+  .about-page__departments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page__departments {
+    grid-template-columns: 1fr;
+  }
+}

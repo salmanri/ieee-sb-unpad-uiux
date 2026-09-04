@@ -1,0 +1,110 @@
+/* ===================================
+   Publications Preview (Home)
+   =================================== */
+.pubs-preview {
+  background: var(--gray-50);
+}
+
+.pubs-preview__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: var(--space-3xl);
+  gap: var(--space-xl);
+}
+
+.pubs-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.pubs-preview__card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  border-left: 3px solid var(--ieee-blue);
+  transition: all var(--transition-smooth);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.pubs-preview__card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.pubs-preview__card:nth-child(2) {
+  border-left-color: var(--unpad-orange);
+}
+
+.pubs-preview__card:nth-child(3) {
+  border-left-color: var(--ieee-blue-dark);
+}
+
+.pubs-preview__card:nth-child(4) {
+  border-left-color: var(--ieee-blue-light);
+}
+
+.pubs-preview__card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.pubs-preview__category {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ieee-blue);
+  letter-spacing: 0.05em;
+}
+
+.pubs-preview__date {
+  font-size: var(--text-xs);
+  color: var(--gray-400);
+}
+
+.pubs-preview__card-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--gray-800);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.pubs-preview__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--ieee-blue);
+  margin-top: var(--space-lg);
+  transition: gap var(--transition-fast);
+}
+
+.pubs-preview__card:hover .pubs-preview__card-link {
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .pubs-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pubs-preview__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .pubs-preview__grid {
+    grid-template-columns: 1fr;
+  }
+}
