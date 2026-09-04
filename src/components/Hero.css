@@ -24,8 +24,6 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  /* Add subtle blur here if needed to mask low-res, but keep it mostly sharp */
-  /* filter: brightness(0.9); */
 }
 
 .hero__overlay {
@@ -34,10 +32,19 @@
   /* Cleaner, more transparent gradient to show the building clearly */
   background: linear-gradient(
     90deg,
-    rgba(0, 51, 84, 0.9) 0%,
-    rgba(0, 98, 155, 0.6) 50%,
-    rgba(0, 51, 84, 0.3) 100%
+    rgba(0, 51, 84, 0.95) 0%,
+    rgba(0, 98, 155, 0.7) 50%,
+    rgba(0, 51, 84, 0.4) 100%
   );
+}
+
+/* Subtle dot pattern to mask low-res image and make it look premium */
+.hero__pattern {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 4px 4px;
+  z-index: 0;
 }
 
 /* Glowing Orbs for Modern Vibe */

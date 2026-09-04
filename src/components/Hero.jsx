@@ -19,6 +19,7 @@ export default function Hero() {
       >
         <img src={heroImg} alt="Universitas Padjadjaran" className="hero__img" />
         <div className="hero__overlay"></div>
+        <div className="hero__pattern"></div>
       </motion.div>
 
       {/* Floating Gradient Orbs for modern feel */}
