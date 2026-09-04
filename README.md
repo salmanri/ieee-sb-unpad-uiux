@@ -1,16 +1,55 @@
-# React + Vite
+# IEEE SB UNPAD UI/UX Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![IEEE SB UNPAD](src/assets/images/logo-ieee-sb-new.png)
 
-Currently, two official plugins are available:
+This project is a complete UI/UX redesign and front-end implementation for the **IEEE Student Branch Universitas Padjadjaran** website. Built with React and Vite, the website focuses on a modern, premium, and professional aesthetic, heavily featuring the organization's official color palette (IEEE Blue and Unpad Orange).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- **Modern & Premium Design**: Clean layouts, high-quality typography (Plus Jakarta Sans), and subtle mesh gradient backgrounds.
+- **Dynamic Animations**: Smooth scroll and entry animations powered by `motion/react`.
+- **Fully Responsive**: Mobile-first architecture ensuring the website looks perfect on desktops, tablets, and smartphones.
+- **Glassmorphic Navigation**: A dynamic, transparent-to-solid navigation bar that adapts based on user scrolling.
+- **Key Pages Implemented**:
+  - `Home`: Engaging animated hero section featuring the iconic Unpad building.
+  - `About`: Detailed history, Cabinet Vector philosophy, and structural department cards.
+  - `News & Events`: Dynamic tabs for filtering recent activities and seminars.
+  - `Publications`: Dedicated sections for technical papers and articles.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+- **Styling**: Vanilla CSS (CSS Variables, Flexbox, CSS Grid)
+- **Animations**: Motion (Framer Motion)
+- **Icons**: Lucide React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📦 Getting Started
+
+To run this project locally on your machine, follow these steps:
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/salmanri/ieee-sb-unpad-uiux.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd ieee-sb-unpad-uiux
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and visit `http://localhost:5173/`.
+
+## 🤝 Maintainers
+Developed for IEEE SB Universitas Padjadjaran (Cabinet Vector 2024/2025).
